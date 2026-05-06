@@ -16,6 +16,15 @@ function App() {
 
 const [SearchTerm, SetSearchTerm] = useState("");
 
+// function to add new project
 const handleAddProject = (project) => {
   setprojects([...projects, project]);
 };
+
+// filtering projects
+const filteredProjects = projects.filter((p) =>
+p.title.toLowerCase().includes(SearchTerm.toLowerCase()));
+
+return (
+  
+)
