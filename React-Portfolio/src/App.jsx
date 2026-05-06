@@ -8,23 +8,23 @@ import ProjectList from "./components/ProjectList";
 import "./App.css";
 
 function App() {
-  const [projects, setprojects] = useState([
+  const [projects, setProjects] = useState([
     { title: "Project 1", description: "To do list project"},
     { title: "Project 2", description: "BlackOps project"},
     { title: "Project 3", description: "React project"},
   ]);
 
 
-const [SearchTerm, SetSearchTerm] = useState("");
+const [searchTerm, setSearchTerm] = useState("");
 
 // function to add new project
 const handleAddProject = (project) => {
-  setprojects([...projects, project]);
+  setProjects([...projects, project]);
 };
 
 // filtering projects
 const filteredProjects = projects.filter((p) =>
-p.title.toLowerCase().includes(SearchTerm.toLowerCase()));
+p.title.toLowerCase().includes(searchTerm.toLowerCase()));
 
 return (
   <div className="container">
@@ -34,8 +34,8 @@ return (
     <ProjectForm onAddProject={handleAddProject} />
 
     <SearchBar
-      SearchTerm={SearchTerm}
-      SetSearchTerm={SetSearchTerm}
+      searchTerm={searchTerm}
+      setSearchTerm={setSearchTerm}
     />
 
     <ProjectList projects={filteredProjects} />
