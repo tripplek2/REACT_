@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 // Importing child components
+import Header from "./components/Header";
 import ProjectForm from "./components/ProjectForm";
 import SearchBar from "./components/SearchBar";
 import ProjectList from "./components/ProjectList";
@@ -27,7 +28,8 @@ p.title.toLowerCase().includes(SearchTerm.toLowerCase()));
 
 return (
   <div className="container">
-    <h1>Personal Project App</h1>
+    
+    <Header />
 
     <ProjectForm onAddProject={handleAddProject} />
 
