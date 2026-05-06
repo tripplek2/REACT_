@@ -14,3 +14,8 @@ function App() {
   ]);
 }
 
+const [SearchTerm, SetSearchTerm] = useState("");
+
+const handleAddProject = (project) => {
+  setprojects([...projects, project]);
+};
