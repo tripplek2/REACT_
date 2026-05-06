@@ -26,5 +26,19 @@ const filteredProjects = projects.filter((p) =>
 p.title.toLowerCase().includes(SearchTerm.toLowerCase()));
 
 return (
-  
+  <div className="container">
+    <h1>Personal Project App</h1>
+
+    <ProjectForm onAddProject={handleAddProject} />
+
+    <SearchBar
+      SearchTerm={SearchTerm}
+      SetSearchTerm={SetSearchTerm}
+    />
+
+    <ProjectList projects={filteredProjects} />
+
+  </div>
 )
+
+export default App;
