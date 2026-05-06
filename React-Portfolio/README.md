@@ -4,17 +4,25 @@ This is a modern React application designed to show projects.It allows users to 
 
 ## Component structure
 1.App(Parent)
+
 2.ProjectForm(Child)
+
 3.SearchBar(Child)
+
 4.ProjectList(Child)
+
 5.ProjectCard(Grandchild)
 
 ## State Management
-.Projects-stotres all projects data.
-.SearchTerm-stores user input for filtering.
-.ProjectForm-sends new project to App.
-.SearchBar-updates searchterm in App.
-.ProjectList-receives filtered projects.
+1.Projects-stotres all projects data.
+
+2.SearchTerm-stores user input for filtering.
+
+3.ProjectForm-sends new project to App.
+
+4.SearchBar-updates searchterm in App.
+
+5.ProjectList-receives filtered projects.
 
 ## Technologies used
 1.React.
@@ -23,9 +31,11 @@ This is a modern React application designed to show projects.It allows users to 
 
 ## How to get started.
 1.Clone the repository
+
 .git clone
 
 2.Navigate to the project
+
 .cd React-portfolio
 
 3.Run npm install
@@ -34,9 +44,13 @@ This is a modern React application designed to show projects.It allows users to 
 
 ## Future improvements.
 1.Editing existing projects.
+
 2.Delete projects.
+
 3.Add an image.
+
 4.Connect to an API.
+
 5.Improve UI with a design framework.
 
 ## Author.
