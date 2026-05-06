@@ -1,18 +1,45 @@
-# React + Vite
+## Personal Project App.
+## Overview.
+This is a modern React application designed to show projects.It allows users to view, add them and also do a search.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Component structure
+1.App(Parent)
+2.ProjectForm(Child)
+3.SearchBar(Child)
+4.ProjectList(Child)
+5.ProjectCard(Grandchild)
 
-Currently, two official plugins are available:
+## State Management
+.Projects-stotres all projects data.
+.SearchTerm-stores user input for filtering.
+.ProjectForm-sends new project to App.
+.SearchBar-updates searchterm in App.
+.ProjectList-receives filtered projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies used
+1.React.
+2.Javascript.
+3.CSS.
 
-## React Compiler
+## How to get started.
+1.Clone the repository
+.git clone
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+2.Navigate to the project
+.cd React-portfolio
 
-Note: This will impact Vite dev & build performances.
+3.Run npm install
 
-## Expanding the ESLint configuration
+4.Run npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Future improvements.
+1.Editing existing projects.
+2.Delete projects.
+3.Add an image.
+4.Connect to an API.
+5.Improve UI with a design framework.
+
+## Author.
+Kelvin Korir
+
+
