@@ -7,9 +7,9 @@ function ProjectList({ projects }) {
 
     return (
         <div className="card">
-        // looping
+        {/* looping */}
           {projects.map((project, index) => (
-            
+
         // Rendering a project card for each project
           <ProjectCard
             key={index}

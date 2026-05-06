@@ -24,21 +24,21 @@ function ProjectForm({ onAddProject }) {
 
             <form onSubmit={handleSubmit}>
 
-                // title input
+                {/* // title input */}
                 <label>Title</label>
                 <input 
                    type="text"
                    value={title}
                    onChange={(e) => setTitle(e.target.value)} 
                 />
-                // description input
+                {/* // description input */}
                 <label>Description</label>
                 <textarea 
                    value={description}
                    onChange={(e) => setDescription(e.target.value)}
                 
                 />
-                // submit button
+                {/* // submit button */}
                 <button type="submit">Add</button>
 
             </form>

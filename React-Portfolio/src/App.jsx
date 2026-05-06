@@ -13,7 +13,7 @@ function App() {
     { title: "Project 2", description: "BlackOps project"},
     { title: "Project 3", description: "React project"},
   ]);
-}
+
 
 const [SearchTerm, SetSearchTerm] = useState("");
 
@@ -42,5 +42,7 @@ return (
 
   </div>
 )
+
+}
 
 export default App;
